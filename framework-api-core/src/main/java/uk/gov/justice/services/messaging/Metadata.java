@@ -49,6 +49,13 @@ public interface Metadata {
     Optional<String> userId();
 
     /**
+     * Get the level of assurance for the user that initiated this message if one was specified.
+     *
+     * @return the level of assurance
+     */
+    Optional<Integer> levelOfAssurance();   
+
+    /**
      * Get the id of the user's session that initiated this message if one was specified.
      *
      * @return the session id

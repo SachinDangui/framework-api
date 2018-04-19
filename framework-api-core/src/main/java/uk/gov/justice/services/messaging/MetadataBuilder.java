@@ -59,6 +59,14 @@ public interface MetadataBuilder {
     MetadataBuilder withUserId(final String userId);
 
     /**
+     * Add a levelOfAssurance to the metadata
+     *
+     * @param levelOfAssurance of the user that initiated this message
+     * @return the current instance of the MetadataBuilder
+     */
+    MetadataBuilder withLevelOfAssurance(final Integer levelOfAssurance);
+
+    /**
      * Add a session id to the metadata
      *
      * @param sessionId id of the user's session that initiated this message

@@ -13,6 +13,7 @@ public abstract class JsonMetadata implements Metadata {
     public static final String CLIENT_ID = "client";
     public static final String CONTEXT = "context";
     public static final String USER_ID = "user";
+    public static final String LEVEL_OF_ASSURANCE = "levelOfAssurance";
     public static final String SESSION_ID = "session";
     public static final String STREAM = "stream";
     public static final String STREAM_ID = "id";
@@ -20,6 +21,7 @@ public abstract class JsonMetadata implements Metadata {
     public static final String CAUSATION = "causation";
 
     protected static final String[] USER_ID_PATH = {CONTEXT, USER_ID};
+    protected static final String[] LEVEL_OF_ASSURANCE_PATH = {CONTEXT, LEVEL_OF_ASSURANCE};
     protected static final String[] CLIENT_CORRELATION_PATH = {CORRELATION, CLIENT_ID};
     protected static final String[] VERSION_PATH = {STREAM, VERSION};
     protected static final String[] SESSION_ID_PATH = {CONTEXT, SESSION_ID};
